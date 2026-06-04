@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAYMENT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="payment-options">
+        <h3>Select Payment Method</h3>
+
+        <p>Total Amount: &#8358;<span id="checkoutTotal">0</span></p>
+
+        <div class="payment-methods">
+
+        <label>
+            <input type="radio" name="payment" value="opay">OPay
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="bank">Bank Transfer
+        </label>
+
+        <label>
+            <input type="radio" name="payment" value="whatsapp">whatsapp
+        </label>
+
+        <button class="checkout-btn" onclick="checkout()">PAY</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+<script>
+    let cartTotal = localStorage.getItem("cartTotal") || 0;
+    document.getElementById("pay-btn").textContent = cartTotal;
+</script>
+
+</body>
+</html>

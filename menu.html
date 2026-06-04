@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLEXYB - Menu</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+
+        <section>
+            <div class="menu-logo">
+                <img src="blexyblogo.png" alt="Blexy B menu logo"
+            </div>
+        
+        </section>
+
+        <section class="menu-section">
+
+            <h2>FOIL CAKES</h2>
+
+            <div class="menu-item">
+                <span>Chocolate</span>
+                <button onclick="addToCart('Chocolate Cake',2500)">&#8358;2500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Red Velvet</span>
+                <button class onclick="addToCart('Red Velvet Cake',2500)">&#8358;2500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Vanilla</span>
+                <button class onclick="addToCart('Red Velvet Cake',1500)">&#8358;1500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Cookies</span>
+                <button onclick="addToCart('Cookies',2000)">&#8358;2000</button>
+            </div>
+        </section>
+
+        <section class="menu-section">
+
+            <h2>PASTRIES</h2>
+
+            <div class="menu-item">
+                <span>Meat Pie</span>
+                <button onclick="addToCart('Meat Pie',900)">&#8358;900</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Pie</span>
+                <button class onclick="addToCart('Chicken Pie',1200)">&#8358;1,200</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Box Of 3 Milky Donuts</span>
+                <button class onclick="addToCart('Box Of 3 Milky Donuts',4500)">&#8358;4,500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Plain Donuts</span>
+                <button onclick="addToCart('Plain Donuts',1000)">&#8358;1,000</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Sausage Rolls</span>
+                <button onclick="addToCart('Sausage Rolls',1000)">&#8358;1,000</button>
+            </div>
+        </section>
+
+        <section class="menu-section">
+
+            <h2>BANANA BREAD</h2>
+
+            <div class="menu-item">
+                <span>Banana Bread</span>
+                <button onclick="addToCart('Banana Bread',1500)">&#8358;1,500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Pack Of 6</span>
+                <button class onclick="addToCart('Pack Of 6',8000)">&#8358;8,000</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Pack Of 4</span>
+                <button class onclick="addToCart('Box Of 3 Milky Donuts',6,000)">&#8358;6000</button>
+            </div>
+            <div class="item-note">Come With Different toppings (Coconut, Fruits, Nuts, etc)</div>
+        </section>
+
+        <section class="menu-section">
+
+            <h2>SMALL CHOPS</h2>
+
+            <div class="menu-item">
+                <span>Samosa</span>
+                <button onclick="addToCart('Samosa',400)">&#8358;400</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Spring Rolls</span>
+                <button onclick="addToCart('Spring Rolls',400)">&#8358;400</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Puff Puff</span>
+                <button onclick="addToCart('Puff Puff',200)">&#8358;200</button>
+            </div>
+        </section>
+
+        <section class="menu-section">
+
+            <h2>PIZZA</h2>
+
+            <div class="menu-item">
+                <span>Beef and Hotdog</span>
+                <button onclick="addToCart('Beef and Hotdog',7000)">&#8358;7,000</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Chicken Supreme</span>
+                <button onclick="addToCart('Chicken Supreme',12000)">&#8358;12,000</button>
+            </div>
+        </section>
+
+        <section class="menu-section">
+
+            <h2>YOGHURT DRINK</h2>
+
+            <div class="menu-item">
+                <span>Creamy Plain Yoghurt</span>
+                <button onclick="addToCart('Beef and Hotdog',1500)">&#8358;1,500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Pack Of 6</span>
+                <button onclick="addToCart('Chicken Supreme',8500)">&#8358;8,500</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Parfait - Medium</span>
+                <button onclick="addToCart('Parfait - medium',4000)">&#8358;4,000</button>
+            </div>
+
+            <div class="menu-item">
+                <span>Parfait - Large</span>
+                <button onclick="addToCart('Parfait - large',6000)">&#8358;6,000</button>
+            </div>
+        </section>
+
+        <div class="cart-box">
+            <strong>Cart Total:</strong> &#8358;<span id="total">0</span>
+        
+        <div>
+            <button class="checkout-btn" onclick="window.location.href='paynow.html'">PAY NOW</button>
+        </div>
+
+        <button class="clear-btn" onclick="clearCart()">Clear</button>
+        </div>
+
+        <script src="script.js"></script>
+
+        
+
+
+
+
+    
+</body>
+</html>

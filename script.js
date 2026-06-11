@@ -69,3 +69,12 @@ const bankSelected = document.querySelector(
 document.getElementById("bankDetails").style.display =
 bankSelected ? "block" : "none";
 }
+
+function sendToWhatsApp() {
+    const message =
+    `Hello, i have completed  payment for N${cartTotal}. sending my payment slip now.`;
+    window.open(
+        `https://wa.me/2348066423863?text=${encodeURIComponent(message)}`,
+        "_blank"
+    );
+}

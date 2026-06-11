@@ -31,8 +31,6 @@ function checkout() {
         return;
     }
 
-    document.getElementById("BankDetails").style.display = "none";
-
 
     if (selected.value === "bank") {
        document.getElementById("bankDetails").style.display = "block";

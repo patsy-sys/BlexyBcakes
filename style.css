@@ -506,3 +506,27 @@ transition: 0.3s ease;
 transform: translateY(-3px);
 opacity: 0.9;
 }
+
+.amount-box {
+background: #f5f5f5;
+padding: 15px;
+border-radius: 10px;
+margin-bottom: 20px;
+font-size: 20px;
+}
+
+.payment-methods label {
+display: block;
+padding: 15px;
+margin-bottom: 10px;
+border: 1px solid #ddd;
+border-radius: 10px;
+cursor: pointer;
+}
+
+#bankDetails {
+margin-top: 20px;
+padding: 15px;
+border-radius: 10px;
+background: #f9f9f9;
+}

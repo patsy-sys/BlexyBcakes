@@ -9,32 +9,50 @@
 <body>
     <div class="payment-options">
         <h3>Select Payment Method</h3>
-
-        <p>Total Amount: &#8358;<span id="checkoutTotal">0</span></p>
+        <div class="amount-box">
+            <strong>Total Amouint:</strong>
+            &#8358;<span id="paymentTotal">0</span>
+        </div>
 
         <div class="payment-methods">
 
-        <label>
-            <input type="radio" name="payment" value="opay">OPay
-        </label>
+            <label>
+              <input type="radio" name="payment" value="bank">Bank Transfer
+            </label>
 
-        <label>
-            <input type="radio" name="payment" value="bank">Bank Transfer
-        </label>
-
-        <label>
-            <input type="radio" name="payment" value="whatsapp">whatsapp
-        </label>
-
-        <button class="checkout-btn" onclick="checkout()">PAY</button>
+            <label>
+              <input type="radio" name="payment" value="whatsapp">whatsapp
+            </label>
         </div>
+
+        <div id="bankDetails" style="display:none;">
+            <h3>Bank Transfer Details</h3>
+            <p><strong>Bank:</strong> OPay</p>
+            <p><strong>Account Name:</strong> Ugochukwu Adaugo Blessing</p>
+            <p><strong>Account Number:</strong> 8066423863</p>
+
+            <button onclick="copyAccount()">
+                Copy Account Number
+            </button>
+        </div>
+
+        <button class="checkout-btn" onclick="checkout()">
+            PAY
+        </button>
+
     </div>
+
 
     <script src="script.js"></script>
 
 <script>
     let cartTotal = localStorage.getItem("cartTotal") || 0;
     document.getElementById("pay-btn").textContent = cartTotal;
+
+    const cartTotal = localStorage.getItem("cartTotal") || 0;
+    document.getElementById("paymentTotal").textContent = cartTotal;
+
+    console.log(localStorage.getItem("cartToal"));
 </script>
 
 </body>

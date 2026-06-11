@@ -59,3 +59,12 @@ let cartTotal = localStorage.getItem("cartTotal") || 0;
 document.getElementById("paymentTotal").textContent = cartTotal;
 
 console.log("Retrieved total:", cartTotal);
+
+function toggleBankDetails() {
+const bankSelected = document.querySelector(
+'input[value="bank"]'
+).checked;
+
+document.getElementById("bankDetails").style.display =
+bankSelected ? "block" : "none";
+}
